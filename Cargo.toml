@@ -1,0 +1,27 @@
+[package]
+name = "oddio_error_example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8.5"
+
+[dependencies.bevy]
+version = "0.8.1"
+default-features = false
+features = [
+  "bevy_winit",         # Window management
+  "x11",                # Linux: Support X11 windowing system
+  "bevy_render",        # Rendering framework core
+  "bevy_core_pipeline", # Higher-level rendering abstractions
+  "serialize",            # Support for `serde` Serialize/Deserialize
+#   "bevy_audio",
+]
+
+[dependencies.bevy_oddio]
+version = "0.2.0"
+features = [
+    "ogg",
+]
