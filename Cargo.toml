@@ -17,7 +17,7 @@ features = [
   "bevy_render",        # Rendering framework core
   "bevy_core_pipeline", # Higher-level rendering abstractions
   "serialize",            # Support for `serde` Serialize/Deserialize
-#   "bevy_audio",
+  "bevy_audio",
 ]
 
 [dependencies.bevy_oddio]
